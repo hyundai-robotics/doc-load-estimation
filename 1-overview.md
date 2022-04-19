@@ -4,7 +4,7 @@
 
 **※ 부하추정 좌표계 : 툴좌표계**
 
-![그림 1 툴좌표계](.gitbook/assets/image.png)
+![그림 1 툴좌표계](_assets/image.png)
 
 {% hint style="info" %}
 * 부하추정 기능은 로봇의 원활한 동작을 위한 것입니다. 이 기능을 중량 등의\
