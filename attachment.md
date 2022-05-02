@@ -1,5 +1,5 @@
 # 별첨
 
-![](<_assets/image (4).png>)
+![](<_assets/image_4.png>)
 
-![](<_assets/image (12).png>)
+![](<_assets/image_12.png>)
