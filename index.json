@@ -1,0 +1,102 @@
+﻿[
+	{
+		"link": "README.md",
+		"char_ofs": 0,
+		"byte_ofs": 0
+	},
+	{
+		"link": "1-overview.md",
+		"char_ofs": 261,
+		"byte_ofs": 502
+	},
+	{
+		"link": "2-load-estimation-result/README.md",
+		"char_ofs": 1048,
+		"byte_ofs": 2294
+	},
+	{
+		"link": "2-load-estimation-result/2-1-weight.md",
+		"char_ofs": 1062,
+		"byte_ofs": 2322
+	},
+	{
+		"link": "2-load-estimation-result/2-3-inertia.md",
+		"char_ofs": 1108,
+		"byte_ofs": 2423
+	},
+	{
+		"link": "3-load-estimation-menu-explain/README.md",
+		"char_ofs": 1360,
+		"byte_ofs": 2955
+	},
+	{
+		"link": "3-load-estimation-menu-explain/3-1-tool-number.md",
+		"char_ofs": 1665,
+		"byte_ofs": 3537
+	},
+	{
+		"link": "3-load-estimation-menu-explain/3-2-motion-area.md",
+		"char_ofs": 1783,
+		"byte_ofs": 3826
+	},
+	{
+		"link": "3-load-estimation-menu-explain/3-3-check-operation.md",
+		"char_ofs": 2552,
+		"byte_ofs": 5322
+	},
+	{
+		"link": "3-load-estimation-menu-explain/3-4-normal-operation.md",
+		"char_ofs": 2987,
+		"byte_ofs": 6256
+	},
+	{
+		"link": "3-load-estimation-menu-explain/3-5-additional-mass-by-axis.md",
+		"char_ofs": 3135,
+		"byte_ofs": 6547
+	},
+	{
+		"link": "3-load-estimation-menu-explain/3-6-positioning.md",
+		"char_ofs": 3355,
+		"byte_ofs": 7026
+	},
+	{
+		"link": "4-load-estimation-motion-area/README.md",
+		"char_ofs": 3852,
+		"byte_ofs": 8131
+	},
+	{
+		"link": "4-load-estimation-motion-area/4-1-6-axis-robot.md",
+		"char_ofs": 3987,
+		"byte_ofs": 8379
+	},
+	{
+		"link": "4-load-estimation-motion-area/4-2-4-axis-palletize-robot.md",
+		"char_ofs": 4053,
+		"byte_ofs": 8480
+	},
+	{
+		"link": "4-load-estimation-motion-area/4-3-paint-robot.md",
+		"char_ofs": 4131,
+		"byte_ofs": 8613
+	},
+	{
+		"link": "5-load-estimation-result-application-method/README.md",
+		"char_ofs": 4198,
+		"byte_ofs": 8719
+	},
+	{
+		"link": "5-load-estimation-result-application-method/5-1-application.md",
+		"char_ofs": 4217,
+		"byte_ofs": 8760
+	},
+	{
+		"link": "5-load-estimation-result-application-method/5-2-check-modify.md",
+		"char_ofs": 4623,
+		"byte_ofs": 9621
+	},
+	{
+		"link": "attachment.md",
+		"char_ofs": 4920,
+		"byte_ofs": 10218
+	}
+]
