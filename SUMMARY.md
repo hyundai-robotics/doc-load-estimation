@@ -1,7 +1,10 @@
 ﻿# Table of contents
 
 * [Hi6 로봇제어기 기능설명서 - 부하 추정](README.md)
-* [1. 개요](1-overview.md)
+* [1. 개요](1-load-estimation-intro/README.md)
+  * [1.1 부하추정 이란](1-load-estimation-intro/1-definition.md)
+  * [1.2 주의 사항 및 안내](1-load-estimation-intro/2-info.md)
+  * [1.3 간편 사용절차서](1-load-estimation-intro/3-procedure.md)
 * [2. 부하추정 결과](2-load-estimation-result/README.md)
   * [2.1 중량](2-load-estimation-result/2-1-weight.md)
   * [2.2 중심 (무게중심)](<2-load-estimation-result/2-2-weight-center of gravity.md>)
@@ -20,4 +23,3 @@
 * [5. 부하추정 결과 적용방법](5-load-estimation-result-application-method/README.md)
   * [5.1 부하추정 결과 적용](5-load-estimation-result-application-method/5-1-application.md)
   * [5.2 부하추정 결과 확인 및 수정](5-load-estimation-result-application-method/5-2-check-modify.md)
-* [별첨](attachment.md)
