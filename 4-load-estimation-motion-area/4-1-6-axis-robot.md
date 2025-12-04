@@ -1,3 +1,3 @@
-﻿# 4.1 6축 로봇
+﻿# 4.1 6-Axis Robot
 
-![그림 7 부하추정 모션 영역 (6축 로봇)](<../_assets/image_5.png>)
+![Fig 7.  load estimation operating range (6-axis robot)](<../_assets/image_5.png>)

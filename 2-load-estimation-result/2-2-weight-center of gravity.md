@@ -1,3 +1,3 @@
-﻿# 2.2 중심 (무게중심)
+﻿# 2.2 Center of Gravity
 
-로봇 끝단에서 부하의 무게 중심의 위치까지의 x, y, z 방향 거리로, 단위는 mm를 사용합니다.
+The center of gravity is defined as the distance from the robot’s end effector to the payload’s center of gravity in the X, Y, and Z directions. The unit used is millimeters (mm).

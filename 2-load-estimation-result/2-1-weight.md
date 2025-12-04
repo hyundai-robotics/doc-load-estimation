@@ -1,3 +1,3 @@
-﻿# 2.1 중량
+﻿# 2.1 Mass
 
-로봇 끝단에 취부되는 부하의 총 중량입니다. 단위는 kg입니다.
+This value represents the total mass of the payload mounted on the robot’s end effector. The unit is kilograms (kg).

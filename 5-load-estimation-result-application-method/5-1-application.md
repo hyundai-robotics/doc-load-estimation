@@ -1,11 +1,15 @@
-﻿# 5.1 부하추정 결과 적용
+﻿# 5.1 Applying Load Estimation Results
 
-부하추정 결과 확인 창에서 ‘**OK**’버튼을 누른 후 질의 창 “**부하추정 결과값으로 반영할까요?**” 에서 제어기 적용에 동의(“**확인**”)한 경우, 추정된 부하의 정보가 지정된 툴번호에 저장됩니다. 반대로 “**아니오**”키를 눌렀을 경우는 저장되지 않습니다.
+After reviewing the load estimation results, press “OK.” When the confirmation message “Apply the estimated values?” appears, selecting “Yes” will save the estimated payload data to the assigned tool number. If “No” is selected, the data will not be saved.
 
-![그림 10 부하추정 결과 화면](<../_assets/image_1.png>)
+![Fig 10. Load Estimation Result Screen](<../_assets/image_1.png>)
 
 <br>
 
-![그림 11 부하추정 결과 반영 질의 창](<../_assets/image_6.png>)
+![Fig 11. Confirmation Window for Applying Estimated Results](<../_assets/image_6.png>)
 
-이렇게 저장된 툴 데이터는 티칭프로그램 상의 툴데이터 선택을 통해 로봇 동작 및 기능 수행 시 적용됩니다. 따라서 툴의 변경 및 툴이 작업물을 핸들링 할 경우, 이 상태를 나타내는 툴데이터 정보를 티칭프로그램의 툴데이터로 사용해야 합니다.
+The saved tool data will be applied during robot operation when the corresponding tool number is selected in the teaching program. Therefore, when the tool is changed or when the tool handles a workpiece, the tool data representing that condition must be selected and used in the teaching program.
+
+
+
+

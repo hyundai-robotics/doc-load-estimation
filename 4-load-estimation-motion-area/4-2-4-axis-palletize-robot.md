@@ -1,3 +1,3 @@
-﻿# 4.2 4축 팔레타이징 로봇
+﻿# 4.2 4-Axis Palletizing Robot
 
-![그림 8 부하추정 모션 영역 (4축 팔레타이징 로봇)](<../_assets/image_8.png>)
+![Fig 8. Load Estimation Operating Range (4-Axis Palletizing Robot)](<../_assets/image_8.png>)

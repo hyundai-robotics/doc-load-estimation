@@ -1,3 +1,3 @@
-﻿# 4. 부하추정 동작 영역
+﻿# 4. Load Estimation Operating Range
 
-부하추정의 모션은 6축 로봇(HX165, HS165, HS200, HA006, HA020 등), 4축 팔레타이징 로봇(HP160), 도장로봇(YP020)에 따라 상이하고 그에 따른 동작 영역은 다음과 같습니다.
+The motion pattern used for load estimation varies depending on the robot type, such as 6-axis robots (HX165, HS165, HS200, HA006, HA020, etc.), 4-axis palletizing robots (HP160), and painting robots (YP020). The corresponding motion ranges are as follows.

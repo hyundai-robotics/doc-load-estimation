@@ -1,9 +1,9 @@
-﻿# 3.4 정상운전
+﻿# 3.4 Normal Operation
 
-부하추정을 실행하는 메뉴입니다. 빠른 속도로 진행되기 때문에 ‘**확인운전**’에서 간섭 여부를 확인한 후 실행해야 합니다.
+This menu executes the load estimation. Since the operation runs at high speed, it must only be executed after verifying interference safety using "**Play check**".
 
-\[**실행 조건**]
+[**Operating condition**]
 
-&#x20;  로봇 제어기 : 수동 모드
+  - Robot controller : manual mode
 
-&#x20;  Enable Switch : On
+  - Enable Switch : On

@@ -1,5 +1,5 @@
-﻿# 1.3 간편 사용절차서
+﻿# 1.3 Simple Operating Procedure
 
 
-![그림 2. 간이 사용절차](../_assets/image_4.png)
+![Fig 2. simple procedure](../_assets/image_4.png)
 

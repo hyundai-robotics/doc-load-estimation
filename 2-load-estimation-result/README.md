@@ -1,2 +1,2 @@
-﻿# 2. 부하추정 내용
+﻿# 2. Load Estimation Details
 

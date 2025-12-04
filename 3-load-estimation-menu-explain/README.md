@@ -1,11 +1,14 @@
-﻿# 3. 부하추정 메뉴 설명
+﻿# 3. Load Estimation Menu Description
 
-『**설정**』 → 『**6.자동 캘리브레이션**』 → 『**4.부하추정 기능**』에서 부하추정을 실행합니다.
+Execute the load estimation from 『**system**』 → 『**6.Auto calibration**』 → 『**4:Load estimation function**』.
 
 {% hint style="info" %}
-『**4.부하추정 기능**』 메뉴를 선택할 때, 제어 모드가 ‘**제진제어**’이면 ‘**PPI**’ 모드로 변경하기 위해 자동으로 모터가 ‘**Off**’ 됩니다. 부하추정 종료시 다시 ‘**제진제어**’모드로 변경되며 모터 ‘**Off**’됩니다.
+
+When selecting the 『**4:Load estimation function**』 menu, if the current control mode is set to “Vibration Suppression Control,” the motor will automatically turn Off to switch the mode to “PPI.”
+After load estimation is completed, the mode will automatically return to “Vibration Suppression Control,” and the motor will again turn Off.
+
 {% endhint %}
 
-![그림 4 부하추정 기능 화면](<../_assets/image_2.png>)
+![Fig 4. load estimation screen)](<../_assets/image_2.png>)
 
 

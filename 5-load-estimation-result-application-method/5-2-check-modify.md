@@ -1,10 +1,26 @@
-﻿# 5.2 부하추정 결과 확인 및 수정
+﻿# 5.2 Checking and Adjusting Results
 
-추정된 부하의 정보는 『**설정**』 → 『**3.로봇파라미터**』 → 『**1.툴데이터**』 메뉴에서 확인 및 수정할 수 있습니다. 추정할 때 입력한 툴번호에서 추정된 결과가 나타납니다.
+The estimated payload data can be checked and modified from:
+“Settings” → “3. Robot Parameters” → “1. Tool Data.”
+The estimation results will appear under the tool number that was used during the load estimation process.
 
-![그림 12 툴 데이터 화면](<../_assets/image_7.png>)
+![Fig 12. Tool Data Screen](<../_assets/image_7.png>)
 
 {% hint style="info" %}
-이너셔의 경우, 추정 결과는 부하의 질량 중심에 대한 이너셔입니다.\
-특정방향에 대한 이너셔가 작은 경우에는, 추정결과가 0으로 표시될 수 있습니다.
+The estimated inertia values are expressed with respect to the payload’s center of gravity.
+If the inertia value in a specific direction is very small, the result may be displayed as 0.
 {% endhint %}
+
+
+
+
+
+The estimated payload data can be checked and modified from:
+“Settings” → “3. Robot Parameters” → “1. Tool Data.”
+The estimation results will appear under the tool number that was used during the load estimation process.
+
+(Figure 12. Tool Data Screen)
+
+Information
+The estimated inertia values are expressed with respect to the payload’s center of gravity.
+If the inertia value in a specific direction is very small, the result may be displayed as 0.

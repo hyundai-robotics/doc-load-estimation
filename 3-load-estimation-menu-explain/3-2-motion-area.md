@@ -1,27 +1,32 @@
-﻿# 3.2 동작 영역
+﻿# 3.2 Operating Range
 
-부하추정 모션을 위한 각 축 동작영역을 나타냅니다. 『**축각도**』는 로봇의 현재 각 축 정보를 나타내며, 『**시작자세**』는 부하추정이 시작되는 초기 자세 정보를 알려줍니다. 『**동작영역**』의 『**min**』과 『**max**』는 부하추정을 수행하는 모션이 사용하는 각 축의 최소, 최대값을 나타냅니다. B축과 R1축의 경우는 최소, 최대 동작영역을 설정할 수 있습니다. 기본 동작영역 조건은 아래와 같습니다.
+This screen displays the motion range of each axis used for load estimation.
+“Axis Angle” shows the current value of each robot axis, and “Start Position” indicates the initial position where load estimation begins.
+The “Min” and “Max” values in the “Motion Range” represent the minimum and maximum axis limits used during the estimation motion.
+For the B axis and R1 axis, the minimum and maximum motion ranges can be configured.
 
-\[**기본 동작영역**]
+The default motion range settings are as follows:
 
-&#x20;  B축   동작영역 (min) : (60도 - H축 각도 – V축 각도)
+\[**Default Motion Range**]
 
-&#x20;  B축   동작영역 (max) : (120도 – H축 각도 – V축 각도)
+&#x20;  B Axis Motion Range (min): (60° − H-axis angle − V-axis angle)
 
-&#x20;  R1축  동작영역 (min) : 0도
+&#x20;  B Axis Motion Range (max): (120° − H-axis angle − V-axis angle)
 
-&#x20;  R1축  동작영역 (max) : 90도
+&#x20;  R1 Axis Motion Range (min): 0°
 
-특정 손목축 동작영역 설정조건에서는 추정이 불가능한 물성치가 존재할 수 있습니다. 이러한 경우, 사용자가 직접 물성치를 입력해야 합니다.
+&#x20;  R1 Axis Motion Range (max): 90°
 
-![그림 5 무게중심(Cx, Cy)과 이너셔 추정 불가 조건에서의 경고문](<../_assets/image_3.png>)
+Depending on the configured wrist-axis motion range, certain payload properties may not be measurable. In such cases, the user must manually input the payload data.
 
-모든 물성치를 추정하기 위한 B축과 R1축 동작영역 조건은 아래와 같습니다.
+![Fig 5. Warning Message When Center of Gravity (Cx, Cy) and Inertia Cannot Be Estimated](<../_assets/image_3.png>)
 
-\[**모든 물성치 추정을 위한 동작영역 조건**]
+The required motion range conditions for the B axis and R1 axis to estimate all payload properties are as follows:
 
-&#x20;  \- B축 동작영역 : (40-H-V)이상 \~ (140-H-V)이내
+\[**Motion Range Conditions for Full Payload Estimation**]
 
-&#x20;  \- B축 min\~max 사이 각도 20도 이상
+&#x20;  \- B-Axis Motion Range: Must be within (40° − H − V) to (140° − H − V)
 
-&#x20;  \- R1축 min\~max 사이 각도 60도 이상
+&#x20;  \- Minimum Motion Angle of B-Axis: 20° or greater
+
+&#x20;  \- Minimum Motion Angle of R1-Axis: 60° or greater

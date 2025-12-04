@@ -1,3 +1,3 @@
-﻿# 4.3 도장 로봇
+﻿# 4.3 Painting Robot
 
-![그림 9 부하추정 모션 영역 (도장 로봇)](<../_assets/image_11.png>)
+![Fig 9. Load Estimation Operating Range (Painting Robot)](<../_assets/image_11.png>)

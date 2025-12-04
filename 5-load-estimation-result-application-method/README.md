@@ -1,2 +1,2 @@
-﻿# 5. 부하추정 결과 적용방법
+﻿# 5. How to Apply Load Estimation Results
 

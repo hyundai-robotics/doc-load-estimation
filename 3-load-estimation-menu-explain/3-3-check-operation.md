@@ -1,11 +1,13 @@
-﻿# 3.3 확인운전
+﻿# 3.3 Test Operation
 
-‘**확인운전**’은 ‘정상운전’보다 느린 속도(약 50\~200 mm/s)로 동작하여 간섭여부를 확인하기 위한 기능입니다. 확인 운전을 실행하면 추정은 이루어지지 않습니다.
+This function is used to check for possible interference. Load estimation is not performed when executing the "**Play check**" function.
 
-부하추정은 일정패턴으로 로봇을 움직인 후 부하의 정보를 얻는 것이기 때문에, 로봇 동작 시 주변환경 혹은 로봇자신과의 간섭에 주의해야 합니다. 따라서, ‘**정상운전**’ 실행 전에 ‘**확인운전**’으로 간섭 여부를 확인하고 충돌 위험시 『**비상정지**』 버튼을 누르거나, 『**Enable Switch**』를 ‘**Off**’하여 로봇을 정지시켜야 합니다. 확인 운전 동작이 완료되기 이전에 동작이 중단된 경우에는, 부하추정 메뉴를 다시 실행해야 합니다.
+Since load estimation operates the robot in a predefined motion pattern to obtain payload data, attention must be given to interference with surrounding equipment or the robot itself during motion. Therefore, before running "**Play normal**", the user must perform "**Play check**" to verify that no collision risk exists. If interference occurs, press the Emergency Stop button or switch the Enable Switch to Off to stop the robot.
 
-\[**실행 조건**]
+If the robot stops before the check operation is completed, the load estimation menu must be executed again.
 
-&#x20;  로봇 제어기 : 수동 모드
+[**Operating condition**]
 
-&#x20;  Enable Switch : On
+  - Robot controller : manual mode
+
+  - Enable Switch : On

@@ -1,7 +1,10 @@
-﻿# 3.5 축별 부가질량
+﻿# 3.5 Additional Mass by Axis
 
-축별 부가질량 메뉴로 이동합니다. 정확한 부하추정을 수행하기 위해서는 3축의 부가중량 정보(질량, x축 무게중심, z축 무게중심)를 입력해야 합니다. 부가질량은 프레임에 설치된 플레이트, 신호박스, 케이블 등을 포함합니다.
 
-3축 부가질량의 입력 좌표계는 다음과 같습니다.
+Navigate to the Additional Mass per Axis menu.
+To perform accurate load estimation, the additional mass information for Axis 3 (mass, X-axis center of gravity, and Z-axis center of gravity) must be entered.
+The additional mass includes items such as mounting plates, signal boxes, and cables attached to the frame.
 
-![그림 6 3축 부가중량 요소 및 좌표계](<../_assets/image_9.png>)
+The coordinate system used for entering the additional mass of Axis 3 is shown below.
+
+![Fig 6. Axis-3 Additional Mass Components and Coordinate System](<../_assets/image_9.png>)

@@ -1,7 +1,8 @@
-﻿# 1.1 부하추정 이란
+﻿# 1.1 What Is Load Estimation
 
 
-부하추정 기능이란 로봇 끝단에 취부되어 있는 부하의 중량과 무게중심위치를 구하는 기능입니다. 로봇을 동력학 모델 기반으로 제어하기 위해서는 로봇 본체의 동력학 파라미터와 로봇 부하에 대한 동력학 파라미터가 함께 필요합니다. 이 때, 로봇에 취부되는 부하는 응용에 따라 여러 가지가 될 수 있고, 그 툴 데이터를 계산하기 어려운 경우에 부하추정기능에서 추정하는 값으로 대체하여 사용합니다.
+The load estimation function calculates the mass and center of gravity position of the payload mounted on the robot’s end effector.
+To control the robot based on a dynamic model, both the dynamic parameters of the robot itself and those of the payload are required. Since the payload attached to the robot can vary depending on the application, and calculating the tool data may be difficult in some cases, the values estimated by the load estimation function can be used as substitutes.
 
-![그림 1 툴좌표계](../_assets/image.png)
+![Fig 1. Tool coordinate system](../_assets/image.png)
 
