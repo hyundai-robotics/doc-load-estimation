@@ -9,6 +9,6 @@ After load estimation is completed, the mode will automatically return to “Vib
 
 {% endhint %}
 
-![Fig 4. Load Estimation Screen)](<../_assets/image_2_eng.png>)
+![Fig 4. Load Estimation Screen](<../_assets/image_2_eng.png>)
 
 

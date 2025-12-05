@@ -9,13 +9,13 @@ The default motion range settings are as follows:
 
 \[**Default Motion Range**]
 
-&#x20;  B Axis Motion Range (min): (60° − H-axis angle − V-axis angle)
+  - B Axis Motion Range (min): (60° − H-axis angle − V-axis angle)
 
-&#x20;  B Axis Motion Range (max): (120° − H-axis angle − V-axis angle)
+  - B Axis Motion Range (max): (120° − H-axis angle − V-axis angle)
 
-&#x20;  R1 Axis Motion Range (min): 0°
+  - R1 Axis Motion Range (min): 0°
 
-&#x20;  R1 Axis Motion Range (max): 90°
+  - R1 Axis Motion Range (max): 90°
 
 Depending on the configured wrist-axis motion range, certain payload properties may not be measurable. In such cases, the user must manually input the payload data.
 
@@ -25,8 +25,8 @@ The required motion range conditions for the B axis and R1 axis to estimate all 
 
 \[**Motion Range Conditions for Full Payload Estimation**]
 
-&#x20;  \- B-Axis Motion Range: Must be within (40° − H − V) to (140° − H − V)
+ - B-Axis Motion Range: Must be within (40° − H − V) to (140° − H − V)
 
-&#x20;  \- Minimum Motion Angle of B-Axis: 20° or greater
+ - Minimum Motion Angle of B-Axis: 20° or greater
 
-&#x20;  \- Minimum Motion Angle of R1-Axis: 60° or greater
+ - Minimum Motion Angle of R1-Axis: 60° or greater
