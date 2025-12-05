@@ -1,3 +1,3 @@
-﻿# 2.1 Mass
+﻿# 2.1 weight
 
-This value represents the total mass of the payload mounted on the robot’s end effector. The unit is kilograms (kg).
+This value represents the total weight of the payload mounted on the robot’s end effector. The unit is kilograms (kg).

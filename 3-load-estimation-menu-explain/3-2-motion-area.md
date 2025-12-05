@@ -19,7 +19,7 @@ The default motion range settings are as follows:
 
 Depending on the configured wrist-axis motion range, certain payload properties may not be measurable. In such cases, the user must manually input the payload data.
 
-![Fig 5. Warning Message When Center of Gravity (Cx, Cy) and Inertia Cannot Be Estimated](<../_assets/image_3.png>)
+![Fig 5. Warning Message When Center of Gravity (Cx, Cy) and Inertia Cannot Be Estimated](<../_assets/image_3_eng.png>)
 
 The required motion range conditions for the B axis and R1 axis to estimate all payload properties are as follows:
 
