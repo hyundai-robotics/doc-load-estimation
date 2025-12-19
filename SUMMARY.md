@@ -1,6 +1,6 @@
 ﻿# Table of contents
 
-* [Hi6 Robot Controller Function Manual - Load Estimation](README.md)
+* [${cont_model} Robot Controller Function Manual - Load Estimation](README.md)
 * [1. Overview](1-load-estimation-intro/README.md)
   * [1.1 What Is Load Estimation](1-load-estimation-intro/1-definition.md)
   * [1.2 Precautions and Instructions](1-load-estimation-intro/2-info.md)

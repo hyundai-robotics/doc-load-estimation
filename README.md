@@ -1,4 +1,4 @@
-﻿# Hi6 Robot Controller Function Manual - Load Estimation
+﻿# ${cont_model} Robot Controller Function Manual - Load Estimation
 
 {% hint style="warning" %}
 The information provided in this manual is the property of Hyundai Robotics.
