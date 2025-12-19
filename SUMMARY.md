@@ -1,6 +1,6 @@
 ﻿# Table of contents
 
-* [Hi6 로봇제어기 기능설명서 - 부하 추정](README.md)
+* [${cont_model} 로봇제어기 기능설명서 - 부하 추정](README.md)
 * [1. 개요](1-load-estimation-intro/README.md)
   * [1.1 부하추정 이란](1-load-estimation-intro/1-definition.md)
   * [1.2 주의 사항 및 안내](1-load-estimation-intro/2-info.md)

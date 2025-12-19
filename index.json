@@ -6,107 +6,107 @@
 	},
 	{
 		"link": "1-load-estimation-intro/README.md",
-		"char_ofs": 261,
-		"byte_ofs": 517
+		"char_ofs": 271,
+		"byte_ofs": 527
 	},
 	{
 		"link": "1-load-estimation-intro/1-definition.md",
-		"char_ofs": 268,
-		"byte_ofs": 531
+		"char_ofs": 278,
+		"byte_ofs": 541
 	},
 	{
 		"link": "1-load-estimation-intro/2-info.md",
-		"char_ofs": 544,
-		"byte_ofs": 1171
+		"char_ofs": 548,
+		"byte_ofs": 1167
 	},
 	{
 		"link": "1-load-estimation-intro/3-procedure.md",
-		"char_ofs": 1046,
-		"byte_ofs": 2366
+		"char_ofs": 1478,
+		"byte_ofs": 3210
 	},
 	{
 		"link": "2-load-estimation-result/README.md",
-		"char_ofs": 1105,
-		"byte_ofs": 2463
+		"char_ofs": 1537,
+		"byte_ofs": 3307
 	},
 	{
 		"link": "2-load-estimation-result/2-1-weight.md",
-		"char_ofs": 1119,
-		"byte_ofs": 2494
+		"char_ofs": 1551,
+		"byte_ofs": 3338
 	},
 	{
 		"link": "2-load-estimation-result/2-3-inertia.md",
-		"char_ofs": 1165,
-		"byte_ofs": 2598
+		"char_ofs": 1597,
+		"byte_ofs": 3442
 	},
 	{
 		"link": "3-load-estimation-menu-explain/README.md",
-		"char_ofs": 1417,
-		"byte_ofs": 3133
+		"char_ofs": 1849,
+		"byte_ofs": 3977
 	},
 	{
 		"link": "3-load-estimation-menu-explain/3-1-tool-number.md",
-		"char_ofs": 1724,
-		"byte_ofs": 3722
+		"char_ofs": 2156,
+		"byte_ofs": 4566
 	},
 	{
 		"link": "3-load-estimation-menu-explain/3-2-motion-area.md",
-		"char_ofs": 1842,
-		"byte_ofs": 4014
+		"char_ofs": 2274,
+		"byte_ofs": 4858
 	},
 	{
 		"link": "3-load-estimation-menu-explain/3-3-check-operation.md",
-		"char_ofs": 2611,
-		"byte_ofs": 5513
+		"char_ofs": 3043,
+		"byte_ofs": 6357
 	},
 	{
 		"link": "3-load-estimation-menu-explain/3-4-normal-operation.md",
-		"char_ofs": 3046,
-		"byte_ofs": 6450
+		"char_ofs": 3478,
+		"byte_ofs": 7294
 	},
 	{
 		"link": "3-load-estimation-menu-explain/3-5-additional-mass-by-axis.md",
-		"char_ofs": 3194,
-		"byte_ofs": 6744
+		"char_ofs": 3626,
+		"byte_ofs": 7588
 	},
 	{
 		"link": "3-load-estimation-menu-explain/3-6-positioning.md",
-		"char_ofs": 3414,
-		"byte_ofs": 7226
+		"char_ofs": 3846,
+		"byte_ofs": 8070
 	},
 	{
 		"link": "4-load-estimation-motion-area/README.md",
-		"char_ofs": 3911,
-		"byte_ofs": 8334
+		"char_ofs": 4343,
+		"byte_ofs": 9178
 	},
 	{
 		"link": "4-load-estimation-motion-area/4-1-6-axis-robot.md",
-		"char_ofs": 4046,
-		"byte_ofs": 8585
+		"char_ofs": 4478,
+		"byte_ofs": 9429
 	},
 	{
 		"link": "4-load-estimation-motion-area/4-2-4-axis-palletize-robot.md",
-		"char_ofs": 4112,
-		"byte_ofs": 8689
+		"char_ofs": 4544,
+		"byte_ofs": 9533
 	},
 	{
 		"link": "4-load-estimation-motion-area/4-3-paint-robot.md",
-		"char_ofs": 4190,
-		"byte_ofs": 8825
+		"char_ofs": 4622,
+		"byte_ofs": 9669
 	},
 	{
 		"link": "5-load-estimation-result-application-method/README.md",
-		"char_ofs": 4257,
-		"byte_ofs": 8934
+		"char_ofs": 4689,
+		"byte_ofs": 9778
 	},
 	{
 		"link": "5-load-estimation-result-application-method/5-1-application.md",
-		"char_ofs": 4276,
-		"byte_ofs": 8978
+		"char_ofs": 4708,
+		"byte_ofs": 9822
 	},
 	{
 		"link": "5-load-estimation-result-application-method/5-2-check-modify.md",
-		"char_ofs": 4687,
-		"byte_ofs": 9859
+		"char_ofs": 5119,
+		"byte_ofs": 10703
 	}
 ]
