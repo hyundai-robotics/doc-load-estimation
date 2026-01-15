@@ -1,6 +1,6 @@
 ﻿# 5.1 Applying Load Estimation Results
 
-After reviewing the load estimation results, press “OK.” When the confirmation message “Apply the estimated values?” appears, selecting “Yes” will save the estimated payload data to the assigned tool number. If “No” is selected, the data will not be saved.
+After reviewing the load estimation results, press "OK." When the confirmation message "Apply the estimated values?" appears, selecting "Yes" will save the estimated payload data to the assigned tool number. If "No" is selected, the data will not be saved.
 
 ![Fig 10. Load Estimation Result Screen](<../_assets/image_1_eng.png>)
 

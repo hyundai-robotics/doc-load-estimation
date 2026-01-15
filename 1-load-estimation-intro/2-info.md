@@ -18,10 +18,10 @@ Robots with a payload capacity of less than 50 kg do not support the load estima
 - For the most accurate results, it is recommended to perform load estimation after sufficient warm-up and after turning off the controller for at least one hour. As the motor temperature increases, the estimation accuracy may decrease.
 
 {% hint style="info" %}
-The recommended temperature range is 35–40°C. Encoder temperature can be checked through the system characteristic data or the load estimation log file.
+The recommended temperature range is 35-40°C. Encoder temperature can be checked through the system characteristic data or the load estimation log file.
 {% endhint %}
 
-- If accurate tool data such as design values or measured values (e.g., weight, center of gravity) are available, manually entering the values into the tool data settings provides higher accuracy. (Executing “Apply CAD Data” is required.)
+- If accurate tool data such as design values or measured values (e.g., weight, center of gravity) are available, manually entering the values into the tool data settings provides higher accuracy. (Executing "Apply CAD Data" is required.)
 
 ![Fig 1.2 Apply CAD Data](../_assets/image_12_eng.png)
 

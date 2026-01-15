@@ -4,8 +4,8 @@ Execute the load estimation from 『**system**』 → 『**6.Auto calibration**�
 
 {% hint style="info" %}
 
-When selecting the 『**4:Load estimation function**』 menu, if the current control mode is set to “Vibration Suppression Control,” the motor will automatically turn Off to switch the mode to “PPI.”
-After load estimation is completed, the mode will automatically return to “Vibration Suppression Control,” and the motor will again turn Off.
+When selecting the 『**4:Load estimation function**』 menu, if the current control mode is set to "Vibration Suppression Control," the motor will automatically turn Off to switch the mode to "PPI."
+After load estimation is completed, the mode will automatically return to "Vibration Suppression Control," and the motor will again turn Off.
 
 {% endhint %}
 
