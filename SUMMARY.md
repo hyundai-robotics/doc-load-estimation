@@ -7,7 +7,7 @@
   * [1.3 Simple Operating Procedure](1-load-estimation-intro/3-procedure.md)
 * [2. Load Estimation Details](2-load-estimation-result/README.md)
   * [2.1 Weight](2-load-estimation-result/2-1-weight.md)
-  * [2.2 Center of Gravity](<2-load-estimation-result/2-2-weight-center of gravity.md>)
+  * [2.2 Center of Gravity](<2-load-estimation-result/2-2-weight-center-of-gravity.md>)
   * [2.3 Inertia](2-load-estimation-result/2-3-inertia.md)
 * [3. Load Estimation Menu Description](3-load-estimation-menu-explain/README.md)
   * [3.1 Tool Number](3-load-estimation-menu-explain/3-1-tool-number.md)
