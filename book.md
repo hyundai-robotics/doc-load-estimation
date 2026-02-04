@@ -59,6 +59,11 @@
 
 로봇 끝단에 취부되는 부하의 총 중량입니다. 단위는 kg입니다.
 
+[__SOURCE](2-load-estimation-result/2-2-weight-center-of-gravity.md)
+# 2.2 중심 (무게중심)
+
+로봇 끝단에서 부하의 무게 중심의 위치까지의 x, y, z 방향 거리로, 단위는 mm를 사용합니다.
+
 [__SOURCE](2-load-estimation-result/2-3-inertia.md)
 # 2.3 이너셔 (관성)
 

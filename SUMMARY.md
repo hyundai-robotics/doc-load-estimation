@@ -7,7 +7,7 @@
   * [1.3 간편 사용절차서](1-load-estimation-intro/3-procedure.md)
 * [2. 부하추정 내용](2-load-estimation-result/README.md)
   * [2.1 중량](2-load-estimation-result/2-1-weight.md)
-  * [2.2 중심 (무게중심)](<2-load-estimation-result/2-2-weight-center of gravity.md>)
+  * [2.2 중심 (무게중심)](<2-load-estimation-result/2-2-weight-center-of-gravity.md>)
   * [2.3 이너셔 (관성)](2-load-estimation-result/2-3-inertia.md)
 * [3. 부하추정 메뉴 설명](3-load-estimation-menu-explain/README.md)
   * [3.1 툴번호](3-load-estimation-menu-explain/3-1-tool-number.md)
