@@ -76,11 +76,11 @@ This value represents the payload's moment of inertia. It refers to the sum of e
 [__SOURCE](3-load-estimation-menu-explain/README.md)
 # 3. Load Estimation Menu Description
 
-Execute the load estimation from 『**system**』 → 『**6.Auto calibration**』 → 『**4:Load estimation function**』.
+Execute the load estimation from `[system] - 6.Auto calibration - 4:Load estimation function`.
 
 {% hint style="info" %}
 
-When selecting the 『**4:Load estimation function**』 menu, if the current control mode is set to "Vibration Suppression Control," the motor will automatically turn Off to switch the mode to "PPI."
+When selecting the `4:Load estimation function` menu, if the current control mode is set to "Vibration Suppression Control," the motor will automatically turn Off to switch the mode to "PPI."
 After load estimation is completed, the mode will automatically return to "Vibration Suppression Control," and the motor will again turn Off.
 
 {% endhint %}
@@ -135,11 +135,11 @@ The required motion range conditions for the B axis and R1 axis to estimate all 
 
 This function is used to check for possible interference. Load estimation is not performed when executing the "**Play check**" function.
 
-Since load estimation operates the robot in a predefined motion pattern to obtain payload data, attention must be given to interference with surrounding equipment or the robot itself during motion. Therefore, before running "**Play normal**", the user must perform "**Play check**" to verify that no collision risk exists. If interference occurs, press the Emergency Stop button or switch the Enable Switch to Off to stop the robot.
+Since load estimation operates the robot in a predefined motion pattern to obtain payload data, attention must be given to interference with surrounding equipment or the robot itself during motion. Therefore, before running `Play normal`, the user must perform `Play check` to verify that no collision risk exists. If interference occurs, press the Emergency Stop button or switch the Enable Switch to Off to stop the robot.
 
 If the robot stops before the check operation is completed, the load estimation menu must be executed again.
 
-[**Operating condition**]
+`[Operating condition]`
 
   - Robot controller : manual mode
 
@@ -150,7 +150,7 @@ If the robot stops before the check operation is completed, the load estimation 
 
 This menu executes the load estimation. Since the operation runs at high speed, it must only be executed after verifying interference safety using "**Play check**".
 
-[**Operating condition**]
+`[Operating condition]`
 
   - Robot controller : manual mode
 
