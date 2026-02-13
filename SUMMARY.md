@@ -1,6 +1,7 @@
 ﻿# Table of contents
 
 * [${cont_model} Controller Function Manual - Load Estimation](README.md)
+* [Precautions](0-about-this-manual/precautions.md)
 * [1. Overview](1-load-estimation-intro/README.md)
   * [1.1 What Is Load Estimation](1-load-estimation-intro/1-definition.md)
   * [1.2 Precautions and Instructions](1-load-estimation-intro/2-info.md)
