@@ -1,3 +1,3 @@
-﻿# 4. Load Estimation Operating Range
+﻿# 4. 负载估算操作范围
 
-The motion pattern used for load estimation varies depending on the robot type, such as 6-axis robots (HX165, HS165, HS200, HA006, HA020, etc.), 4-axis palletizing robots (HP160), and painting robots (YP020). The corresponding motion ranges are as follows.
+用于负载估算的运动模式因机器人类型而异，例如 6 轴机器人（HX165、HS165、HS200、HA006、HA020 等）、4 轴码垛机器人（HP160）和喷涂机器人（YP020）。相应的运动范围如下。

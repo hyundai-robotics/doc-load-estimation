@@ -1,5 +1,4 @@
-﻿# 1.3 Simple Operating Procedure
+﻿# 1.3 简单操作程序
 
 
 ![Fig 2. Simple Procedure](../_assets/image_4_eng.png)
-

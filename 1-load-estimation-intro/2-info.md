@@ -1,28 +1,27 @@
-﻿# 1.2 Precautions and Instructions
+﻿# 1.2 注意事项和说明
 
+- 负载估计是在工具坐标系统基础上进行的。
 
-- The payload estimated during load estimation is based on the tool coordinate system.
+- 负载估计功能旨在支持稳定和最佳的机器人操作。它不适用于精确测量负载重量或其他物理值。
 
-- The load estimation function is intended to support stable and optimal robot operation. It is not suitable for precise measurement of payload weight or other physical values.
+- 负载估计功能仅在机器人安装在地面上时可用。安装在墙壁或天花板上的机器人不支持此功能。
 
-- The load estimation function can only be used when the robot is installed on the floor. Robots installed on a wall or ceiling do not support this function.
+- 工具的物理属性（重量、重心和惯性）越小，估计误差可能越大。如果工具的物理值非常小，建议用户手动输入工具数据。
 
-- The smaller the physical properties of the tool (weight, center of gravity, and inertia), the greater the estimation error may be. If the tool has very small physical values, it is recommended that the user manually inputs the tool data.
-
-- If the robot uses multiple conditions such as the tool alone or the tool combined with a workpiece, separate tool data must be registered for each case. Perform load estimation for each condition: (Tool only) and (Tool + Workpiece).
-
-{% hint style="info" %}
-Robots with a payload capacity of less than 50 kg do not support the load estimation function.
-{% endhint %}
-
-- For the most accurate results, it is recommended to perform load estimation after sufficient warm-up and after turning off the controller for at least one hour. As the motor temperature increases, the estimation accuracy may decrease.
+- 如果机器人使用多个条件，例如单独工具或工具与工件结合，必须为每种情况注册单独的工具数据。分别对每种条件执行负载估计：（仅工具）和（工具 + 工件）。
 
 {% hint style="info" %}
-The recommended temperature range is 35-40°C. Encoder temperature can be checked through the system characteristic data or the load estimation log file.
+负载能力小于50公斤的机器人不支持负载估计功能。
 {% endhint %}
 
-- If accurate tool data such as design values or measured values (e.g., weight, center of gravity) are available, manually entering the values into the tool data settings provides higher accuracy. (Executing "Apply CAD Data" is required.)
+- 为获得最准确的结果，建议在充分预热并在关闭控制器至少一小时后进行负载估计。随着电机温度的增加，估计精度可能会降低。
 
-![Fig 1.2 Apply CAD Data](../_assets/image_12_eng.png)
+{% hint style="info" %}
+推荐的温度范围是35-40°C。编码器温度可以通过系统特性数据或负载估计日志文件检查。
+{% endhint %}
 
-- Values tuned on one robot model do not necessarily guarantee the same estimation performance on other units of the same model. Mechanical and operating characteristics vary by robot, including mechanical tolerances, motor performance deviation, lubrication conditions, and temperature environment.
+- 如果有准确的工具数据，如设计值或测量值（例如，重量、重心），手动将这些值输入工具数据设置可以提供更高的准确性。（需要执行“应用CAD数据”）。
+
+![图 1.2 应用CAD数据](../_assets/image_12_eng.png)
+
+- 在一种机器人模型上调校的值不一定能保证在同一型号的其他设备上获得相同的估计性能。机械和操作特性因机器人而异，包括机械公差、电机性能偏差、润滑条件和温度环境。

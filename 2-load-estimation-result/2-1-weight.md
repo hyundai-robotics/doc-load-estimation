@@ -1,3 +1,3 @@
-﻿# 2.1 Weight
+﻿# 2.1 重量
 
-This value represents the total weight of the payload mounted on the robot's end effector. The unit is kilograms (kg).
+这个值表示安装在机器人末端执行器上的有效载荷的总重量。单位为千克（kg）。

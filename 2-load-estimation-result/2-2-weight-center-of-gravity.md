@@ -1,3 +1,3 @@
-﻿# 2.2 Center of Gravity
+﻿# 2.2 重心
 
-The center of gravity is defined as the distance from the robot's end effector to the payload's center of gravity in the X, Y, and Z directions. The unit used is millimeters (mm).
+重心定义为机器人末端执行器到有效载荷重心在X、Y和Z方向上的距离。使用的单位是毫米（mm）。

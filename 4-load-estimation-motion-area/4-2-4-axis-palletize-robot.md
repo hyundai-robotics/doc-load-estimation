@@ -1,3 +1,3 @@
-﻿# 4.2 4-Axis Palletizing Robot
+﻿# 4.2 4轴码垛机器人
 
-![Fig 8. Load Estimation Operating Range (4-Axis Palletizing Robot)](<../_assets/image_8_eng.png>)
+![图8. 负载估计操作范围 (4轴码垛机器人)](<../_assets/image_8_eng.png>)

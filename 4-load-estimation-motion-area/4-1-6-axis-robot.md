@@ -1,3 +1,3 @@
-﻿# 4.1 6-Axis Robot
+﻿# 4.1 6轴机器人
 
-![Fig 7.  Load Estimation Operating Range (6-axis robot)](<../_assets/image_5_eng.png>)
+![Fig 7.  载荷估计操作范围 (6轴机器人)](<../_assets/image_5_eng.png>)

@@ -1,9 +1,9 @@
-﻿# 3.4 Normal Operation
+﻿# 3.4 正常操作
 
-This menu executes the load estimation. Since the operation runs at high speed, it must only be executed after verifying interference safety using "**Play check**".
+此菜单执行负载估计。由于操作在高速运行，因此必须在使用 "**Play check**" 验证干扰安全后才可以执行。
 
-`[Operating condition]`
+`[操作条件]`
 
-  - Robot controller : manual mode
+  - 机器人控制器 : 手动模式
 
-  - Enable Switch : On
+  - 启用开关 : 开

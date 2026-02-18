@@ -1,6 +1,5 @@
-﻿# 2.3 Inertia
+﻿# 2.3 惯性
 
-This value represents the payload's moment of inertia. It refers to the sum of each distributed weight multiplied by the square of its distance from the rotational axis, assuming rotation around the X, Y, and Z axes. The moment of inertia is determined by how the weight is distributed around each axis - greater values occur when more of the payload's weight is located farther from the rotation axis. The unit used is kg·m² for the X, Y, and Z axes.
+该值表示载荷的惯性矩。它指的是每个分布重量乘以其与旋转轴距离的平方的总和，假设围绕 X、Y 和 Z 轴旋转。惯性矩由重量在每个轴周围的分布方式决定——当载荷的更多重量位于离旋转轴更远的位置时，惯性矩的值更大。使用的单位为 kg·m²，对于 X、Y 和 Z 轴。
 
-![Fig 3. Inertia Calculation](<../_assets/image_10_eng.png>)
-
+![图 3. 惯性计算](<../_assets/image_10_eng.png>)

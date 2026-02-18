@@ -1,10 +1,10 @@
-﻿# 3.5 Additional Weights by Axis
+﻿# 3.5 额外重量按轴
 
 
-Navigate to the Additional weights per Axis menu.
-To perform accurate load estimation, the additional weight information for Axis 3 (weight, X-axis center of gravity, and Z-axis center of gravity) must be entered.
-The additional weights include items such as mounting plates, signal boxes, and cables attached to the frame.
+导航到每轴的额外重量菜单。
+为了进行准确的负载估计，必须输入轴 3 的额外重量信息（重量、X轴重心和Z轴重心）。
+额外重量包括安装板、信号框和连接到框架的电缆等项目。
 
-The coordinate system used for entering the additional weights of Axis 3 is shown below.
+用于输入轴 3 额外重量的坐标系统如下所示。
 
 ![Fig 6. Axis-3 Additional Weight Components and Coordinate System](<../_assets/image_9_eng.png>)
