@@ -7,7 +7,7 @@
 
 <table>
 <tr>
-<th>순서</th>
+<th><center>순서</th>
 <th> <center>작업</th>
 </tr>
 
@@ -16,7 +16,7 @@
 <td align="center"><b>부하추정기능 메뉴 진입</b></td>
 </tr>
 <tr>
-<td align="center">`[F2:시스템] - 6:자동 캘리브레이션 - 4:부하추정 기능`</td>
+<td align="center">[F2:시스템] - 6:자동 캘리브레이션 - 4:부하추정 기능</td>
 </tr>
 
 <tr>
@@ -24,7 +24,7 @@
 <td align="center"><b>부가질량 입력</td>
 </tr>
 <tr>
-<td align="center">`[F4:축별 부가질량]`</td>
+<td align="center">[F4:축별 부가질량]</td>
 </tr>
 
 <tr>
@@ -32,7 +32,7 @@
 <td align="center"><b>주축 추정 자세 지정</td>
 </tr>
 <tr>
-<td align="center">`[F5:주축 자세지정]`</td>
+<td align="center">[F5:주축 자세지정]</td>
 </tr>
 
 <tr>
@@ -48,7 +48,7 @@
 <td align="center"><b>확인 운전</td>
 </tr>
 <tr>
-<td align="center">`[F1:확인운전]`, 저속 간섭 확인</td>
+<td align="center">[F1:확인운전], 저속 간섭 확인</td>
 </tr>
 
 <tr>
@@ -56,7 +56,7 @@
 <td align="center"><b>툴번호 입력 및 정상 운전</b></td>
 </tr>
 <tr>
-<td align="center">툴번호 입력창, `[F2:정상운전]`</td>
+<td align="center">툴번호 입력창, [F2:정상운전]</td>
 </tr>
 
 <tr>
