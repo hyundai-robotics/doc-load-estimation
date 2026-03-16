@@ -5,7 +5,7 @@
 [__SOURCE](0-about-this-manual/precautions.md)
 # Precautions
 
-{% include url="https://hrcontentsrelay-bmgae5hdbzapc4bc.koreacentral-01.azurewebsites.net/api/proxy?path=doc-common-pages/en/precautions.md" %}
+{% include file="en/precautions.md" %}
 
 [__SOURCE](1-load-estimation-intro/README.md)
 # 1. Overview
@@ -50,12 +50,79 @@ The recommended temperature range is 35-40°C. Encoder temperature can be checke
 - Values tuned on one robot model do not necessarily guarantee the same estimation performance on other units of the same model. Mechanical and operating characteristics vary by robot, including mechanical tolerances, motor performance deviation, lubrication conditions, and temperature environment.
 
 [__SOURCE](1-load-estimation-intro/3-procedure.md)
-# 1.3 Simple Operating Procedure
+# 1.3 Quick Operating Procedure
 
 
-![Fig 2. Simple Procedure](../_assets/image_4_eng.png)
+Perform the load estimation function according to the sequence shown in the table below.
 
 
+<br>
+
+
+<table>
+<tr>
+<th><center>step</th>
+<th> <center>Task</th>
+</tr>
+
+<tr>
+<td rowspan="2" align="center">1</td>
+<td align="center"><b>Enter the function menu </b></td>
+</tr>
+<tr>
+<td align="center">[F2:system] - 6:Auto calibration - 4:Load estimation</td>
+</tr>
+
+<tr>
+<td rowspan="2" align="center">2</td>
+<td align="center"><b>Input the added weights</td>
+</tr>
+<tr>
+<td align="center">[F4:Add.weight on each axis]</td>
+</tr>
+
+<tr>
+<td rowspan="2" align="center">3</td>
+<td align="center"><b>Set the posture for main axes</td>
+</tr>
+<tr>
+<td align="center">[F5:Set pose]</td>
+</tr>
+
+<tr>
+<td rowspan="2" align="center">4</td>
+<td align="center"><b>Set the moving ranges for wrist axes</td>
+</tr>
+<tr>
+<td align="center">Enter the operating ranges of the B, R1 axes <Br>(estimation may not be possible for some ranges).</td>
+</tr>
+
+<tr>
+<td rowspan="2" align="center">5</td>
+<td align="center"><b>Try a test operation
+</td>
+</tr>
+<tr>
+<td align="center">[F1:Play check] <br> Check for interference at low speed.</td>
+</tr>
+
+<tr>
+<td rowspan="2" align="center">6</td>
+<td align="center"><b>Insert a tool number and operate </b></td>
+</tr>
+<tr>
+<td align="center">Tool number editing box <br> [F2:Play normal]</td>
+</tr>
+
+<tr>
+<td rowspan="2" align="center">7</td>
+<td align="center"><b>Apply the estimated results</b></td>
+</tr>
+<tr>
+<td align="center">After completing the operation, enter confirmation.</td>
+</tr>
+
+</table>
 [__SOURCE](2-load-estimation-result/README.md)
 # 2. Load Estimation Details
 
@@ -193,7 +260,7 @@ If the user attempts to press "Set Position" while the V-axis angle exceeds ±60
 [__SOURCE](4-load-estimation-motion-area/README.md)
 # 4. Load Estimation Operating Range
 
-The motion pattern used for load estimation varies depending on the robot type, such as 6-axis robots (HX165, HS165, HS200, HA006, HA020, etc.), 4-axis palletizing robots (HP160), and painting robots (YP020). The corresponding motion ranges are as follows.
+The motion pattern used for load estimation varies depending on the robot type, such as 6-axis robots (HDX series, HDR series etc.), 4-axis palletizing robots (HDP series), and painting robots (HDE series). The corresponding motion ranges are as follows.
 [__SOURCE](4-load-estimation-motion-area/4-1-6-axis-robot.md)
 # 4.1 6-Axis Robot
 
