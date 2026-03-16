@@ -5,7 +5,7 @@
 [__SOURCE](0-about-this-manual/precautions.md)
 # 사전 주의사항
 
-{% include url="https://hrcontentsrelay-bmgae5hdbzapc4bc.koreacentral-01.azurewebsites.net/api/proxy?path=doc-common-pages/ko/precautions.md" %}
+{% include file="ko/precautions.md" %}
 
 [__SOURCE](1-load-estimation-intro/README.md)
 # 1. 개요
@@ -51,10 +51,74 @@
 [__SOURCE](1-load-estimation-intro/3-procedure.md)
 # 1.3 간편 사용절차서
 
+부하 추정 기능은 아래 표의 순서대로 진행합니다.
 
-![그림 2. 간이 사용절차](../_assets/image_4.png)
+<br>
 
 
+<table>
+<tr>
+<th><center>순서</th>
+<th> <center>작업</th>
+</tr>
+
+<tr>
+<td rowspan="2" align="center">1</td>
+<td align="center"><b>부하추정기능 메뉴 진입</b></td>
+</tr>
+<tr>
+<td align="center">[F2:시스템] - 6:자동 캘리브레이션 - 4:부하추정 기능</td>
+</tr>
+
+<tr>
+<td rowspan="2" align="center">2</td>
+<td align="center"><b>부가질량 입력</td>
+</tr>
+<tr>
+<td align="center">[F4:축별 부가질량]</td>
+</tr>
+
+<tr>
+<td rowspan="2" align="center">3</td>
+<td align="center"><b>주축 추정 자세 지정</td>
+</tr>
+<tr>
+<td align="center">[F5:주축 자세지정]</td>
+</tr>
+
+<tr>
+<td rowspan="2" align="center">4</td>
+<td align="center"><b>손목축 동작영역 입력</td>
+</tr>
+<tr>
+<td align="center">B, R1축 동작영역 입력 (영역별 추정 불가 발생 가능)</td>
+</tr>
+
+<tr>
+<td rowspan="2" align="center">5</td>
+<td align="center"><b>확인 운전</td>
+</tr>
+<tr>
+<td align="center">[F1:확인운전], 저속 간섭 확인</td>
+</tr>
+
+<tr>
+<td rowspan="2" align="center">6</td>
+<td align="center"><b>툴번호 입력 및 정상 운전</b></td>
+</tr>
+<tr>
+<td align="center">툴번호 입력창, [F2:정상운전]</td>
+</tr>
+
+<tr>
+<td rowspan="2" align="center">7</td>
+<td align="center"><b>추정 결과 반영</b></td>
+</tr>
+<tr>
+<td align="center">운전 종료 후 확인 입력</td>
+</tr>
+
+</table>
 [__SOURCE](2-load-estimation-result/README.md)
 # 2. 부하추정 내용
 
@@ -174,7 +238,7 @@ S축은 자세 지정에 제한이 없지만 H축과 V축은 로봇 V축 프레�
 [__SOURCE](4-load-estimation-motion-area/README.md)
 # 4. 부하추정 동작 영역
 
-부하추정의 모션은 6축 로봇(HX165, HS165, HS200, HA006, HA020 등), 4축 팔레타이징 로봇(HP160), 도장로봇(YP020)에 따라 상이하고 그에 따른 동작 영역은 다음과 같습니다.
+부하추정의 모션은 6축 로봇(HDX 시리즈, HDR 시리즈 등), 4축 팔레타이징 로봇(HDP 시리즈), 도장로봇(HDE 시리즈)에 따라 상이하고 그에 따른 동작 영역은 다음과 같습니다.
 
 [__SOURCE](4-load-estimation-motion-area/4-1-6-axis-robot.md)
 # 4.1 6축 로봇
