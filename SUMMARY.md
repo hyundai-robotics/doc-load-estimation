@@ -1,7 +1,9 @@
 ﻿# Table of contents
 
-          * [${cont_model} 控制器功能手册 - 负载估算](README.md)
-          * [注意事项](0-about-this-manual/precautions.md)
+* [${cont_model} 控制器功能手册 - 负载估算](README.md)
+* [关于手册](0-about-this-manual/README.md)
+  * [注意事项](0-about-this-manual/precautions.md)
+  * [安全注意事项](0-about-this-manual/safety-notice.md)
 * [1. 概述](1-load-estimation-intro/README.md)
   * [1.1 什么是负载估计](1-load-estimation-intro/1-definition.md)
   * [1.2 注意事项和说明](1-load-estimation-intro/2-info.md)
