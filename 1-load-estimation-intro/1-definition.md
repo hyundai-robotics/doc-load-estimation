@@ -1,8 +1,7 @@
-﻿# 1.1 What Is Load Estimation
+# 1.1 负载估计是什么
 
 
-The load estimation function calculates the wegiht and center of gravity position of the payload mounted on the robot's end effector.
-To control the robot based on a dynamic model, both the dynamic parameters of the robot itself and those of the payload are required. Since the payload attached to the robot can vary depending on the application, and calculating the tool data may be difficult in some cases, the values estimated by the load estimation function can be used as substitutes.
+负载估计功能计算安装在机器人末端执行器上的有效载荷的重量和重心位置。
+为了基于动态模型控制机器人，需要机器人本身的动态参数以及有效载荷的动态参数。由于附加在机器人的有效载荷可以根据应用而有所不同，并且在某些情况下计算工具数据可能很困难，因此通过负载估计功能估计的值可以作为替代使用。
 
 ![Fig 1. Tool Coordinate System](../_assets/image.png)
-

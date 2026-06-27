@@ -1,6 +1,6 @@
-﻿# 5.1 Applying Load Estimation Results
+# 5.1 应用负载估计结果
 
-After reviewing the load estimation results, press "OK." When the confirmation message "Apply the estimated values?" appears, selecting "Yes" will save the estimated payload data to the assigned tool number. If "No" is selected, the data will not be saved.
+在查看负载估计结果后，按“OK”。当确认消息“应用估计值？”出现时，选择“是”将把估计的有效载荷数据保存到分配的工具编号。如果选择“否”，数据将不会被保存。
 
 ![Fig 10. Load Estimation Result Screen](<../_assets/image_1_eng.png>)
 
@@ -8,8 +8,4 @@ After reviewing the load estimation results, press "OK." When the confirmation m
 
 ![Fig 11. Confirmation Window for Applying Estimated Results](<../_assets/image_6_eng.png>)
 
-The saved tool data will be applied during robot operation when the corresponding tool number is selected in the teaching program. Therefore, when the tool is changed or when the tool handles a workpiece, the tool data representing that condition must be selected and used in the teaching program.
-
-
-
-
+保存的工具数据将在机器人操作时应用，当在教学程序中选择相应的工具编号。因此，当工具更改或工具处理工件时，必须在教学程序中选择和使用代表该条件的工具数据。

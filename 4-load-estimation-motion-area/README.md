@@ -1,3 +1,3 @@
-﻿# 4. Load Estimation Operating Range
+﻿# 4. 负载估计操作范围
 
-The motion pattern used for load estimation varies depending on the robot type, such as 6-axis robots (HDX series, HDR series etc.), 4-axis palletizing robots (HDP series), and painting robots (HDE series). The corresponding motion ranges are as follows.
+用于负载估计的运动模式因机器人类型而异，例如6轴机器人（HDX系列，HDR系列等），4轴码垛机器人（HDP系列）和喷涂机器人（HDE系列）。相应的运动范围如下。

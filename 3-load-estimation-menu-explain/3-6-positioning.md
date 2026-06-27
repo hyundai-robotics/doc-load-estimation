@@ -1,17 +1,16 @@
-﻿# 3.6 Posture Setting
+﻿# 3.6 姿态设置
 
-Specify the starting posture for the estimation motion.
-The user must manually move the robot axes to a position where no interference occurs between the robot, tool, or surrounding environment, and then press "**Set pose**(Set Main-Axis Position)" to register the starting posture.
+指定估计运动的起始姿态。 用户必须手动移动机器人轴到不与机器人、工具或周围环境发生干扰的位置，然后按“**设置姿态**（设置主轴位置）”以注册起始姿态。
 
-There is no restriction for the S-axis; however, the H and V axes must be set so that the V-axis frame angle remains within ±60° relative to the ground reference. For optimal estimation accuracy, it is recommended to set the V-axis angle as close to 0° as possible.
+S轴没有限制；然而，H轴和V轴必须设置以保持V轴框架角度相对于地面基准在±60°以内。为了获得最佳的估计准确性，建议将V轴角度设置得尽可能接近0°。
 
-If the user attempts to press "Set Position" while the V-axis angle exceeds ±60°, a message will appear stating:
-"The V-axis angle must be within ±60° relative to the ground."
+如果用户在V轴角度超过±60°时尝试按“设置位置”，将出现一条消息：
+“V轴角度必须相对于地面保持在±60°以内。”
 
-1.  **Current Axis Angles**
+1.  **当前轴角度**
 
-    Displays the current angles of the main robot axes (S, H, V).
+    显示主机器人轴（S、H、V）的当前角度。
 
-2.  **Starting Position**
+2.  **起始位置**
 
-    Displays the registered S, H, and V axis angles used as the starting posture for load estimation. Once the **Play check** or **Play normal** button is executed, the robot posture will move to the specified position.
+    显示注册的S、H和V轴角度，作为负载估计的起始姿态。一旦执行“**播放检查**”或“**正常播放**”按钮，机器人姿态将移动到指定位置。

@@ -1,17 +1,12 @@
-﻿# 5.2 Checking and Adjusting Results
+# 5.2 检查和调整结果
 
-The estimated payload data can be checked and modified from:
-"Settings" → "3. Robot Parameters" → "1. Tool Data."
-The estimation results will appear under the tool number that was used during the load estimation process.
+估计的有效载荷数据可以从：
+"设置" → "3. 机器人参数" → "1. 工具数据" 检查和修改。
+估计结果将显示在用于负载估计过程的工具编号下。
 
 ![Fig 12. Tool Data Screen](<../_assets/image_7_eng.png>)
 
 {% hint style="info" %}
-The estimated inertia values are expressed with respect to the payload's center of gravity.
-If the inertia value in a specific direction is very small, the result may be displayed as 0.
+估计的惯性值是相对于有效载荷的重心表示的。
+如果特定方向的惯性值非常小，结果可能会显示为0。
 {% endhint %}
-
-
-
-
-

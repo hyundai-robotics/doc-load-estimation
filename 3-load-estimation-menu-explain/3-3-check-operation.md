@@ -1,13 +1,13 @@
-﻿# 3.3 Test Operation
+﻿# 3.3 测试操作
 
-This function is used to check for possible interference. Load estimation is not performed when executing the "**Play check**" function.
+此功能用于检查可能的干扰。在执行“**检查操作 (Play check)**”功能时，不执行载荷估算。
 
-Since load estimation operates the robot in a predefined motion pattern to obtain payload data, attention must be given to interference with surrounding equipment or the robot itself during motion. Therefore, before running `Play normal`, the user must perform `Play check` to verify that no collision risk exists. If interference occurs, press the Emergency Stop button or switch the Enable Switch to Off to stop the robot.
+由于载荷估算在预定义的运动模式下操作机器人以获取负载数据，因此在运动过程中必须注意与周围设备或机器人自身的干扰。因此，在运行 `正常运行 (Play normal)` 之前，用户必须执行 `检查操作 (Play check)` 以验证不存在碰撞风险。如果发生干扰，请按下急停按钮或将启用开关切换为关闭以停止机器人。
 
-If the robot stops before the check operation is completed, the load estimation menu must be executed again.
+如果机器人在检查操作完成之前停止，则必须再次执行载荷估算菜单。
 
-`[Operating condition]`
+`[操作条件]`
 
-  - Robot controller : manual mode
+  - 机器人控制器 : 手动模式
 
-  - Enable Switch : On
+  - 启用开关 : 开

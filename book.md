@@ -1,297 +1,267 @@
 ﻿
 [__SOURCE](README.md)
-# ${cont_model} Controller Function Manual - Load Estimation
-
+# ${cont_model} 控制器功能手册 - 负载估计
 [__SOURCE](0-about-this-manual/README.md)
-# About the Manual
-
+# 关于手册
 [__SOURCE](0-about-this-manual/precautions.md)
-# Precautions
+# 注意事项
 
-{% include file="en/precautions.md" %}
-
+{% include file="zh/precautions.md" %}
 [__SOURCE](0-about-this-manual/safety-notice.md)
-# Safety Cautions
+# 安全警告
 
-{% include file="en/safety-notice.md" %}
-
+{% include file="zh/safety-notice.md" %}
 [__SOURCE](1-load-estimation-intro/README.md)
-# 1. Overview
+# 1. 概述
 [__SOURCE](1-load-estimation-intro/1-definition.md)
-# 1.1 What Is Load Estimation
+# 1.1 负载估计是什么
 
 
-The load estimation function calculates the wegiht and center of gravity position of the payload mounted on the robot's end effector.
-To control the robot based on a dynamic model, both the dynamic parameters of the robot itself and those of the payload are required. Since the payload attached to the robot can vary depending on the application, and calculating the tool data may be difficult in some cases, the values estimated by the load estimation function can be used as substitutes.
+负载估计功能计算安装在机器人末端执行器上的有效载荷的重量和重心位置。
+为了基于动态模型控制机器人，需要机器人本身的动态参数以及有效载荷的动态参数。由于附加在机器人的有效载荷可以根据应用而有所不同，并且在某些情况下计算工具数据可能很困难，因此通过负载估计功能估计的值可以作为替代使用。
 
 ![Fig 1. Tool Coordinate System](../_assets/image.png)
-
-
 [__SOURCE](1-load-estimation-intro/2-info.md)
-# 1.2 Precautions and Instructions
+# 1.2 注意事项和指示
 
 
-- The payload estimated during load estimation is based on the tool coordinate system.
+- 装载估计期间估计的有效载荷基于工具坐标系统。
 
-- The load estimation function is intended to support stable and optimal robot operation. It is not suitable for precise measurement of payload weight or other physical values.
+- 装载估计功能旨在支持稳定和最佳的机器人运行。 不适合精确测量有效载荷重量或其他物理值。
 
-- The load estimation function can only be used when the robot is installed on the floor. Robots installed on a wall or ceiling do not support this function.
+- 仅在机器人安装在地面上时，才能使用装载估计功能。 安装在墙壁或天花板上的机器人不支持该功能。
 
-- The smaller the physical properties of the tool (weight, center of gravity, and inertia), the greater the estimation error may be. If the tool has very small physical values, it is recommended that the user manually inputs the tool data.
+- 工具的物理特性(重量、重心和惯性)越小，估计误差可能越大。 如果工具的物理值非常小，建议用户手动输入工具数据。
 
-- If the robot uses multiple conditions such as the tool alone or the tool combined with a workpiece, separate tool data must be registered for each case. Perform load estimation for each condition: (Tool only) and (Tool + Workpiece).
-
-{% hint style="info" %}
-Robots with a payload capacity of less than 50 kg do not support the load estimation function.
-{% endhint %}
-
-- For the most accurate results, it is recommended to perform load estimation after sufficient warm-up and after turning off the controller for at least one hour. As the motor temperature increases, the estimation accuracy may decrease.
+- 如果机器人使用多个条件，例如单独工具或与工件结合的工具，则必须为每种情况单独登记工具数据。 对每个条件执行负载估计: (仅工具)和(工具 + 工件)。
 
 {% hint style="info" %}
-The recommended temperature range is 35-40°C. Encoder temperature can be checked through the system characteristic data or the load estimation log file.
+有效载荷容量小于50kg的机器人不支持负载估计功能。
 {% endhint %}
 
-- If accurate tool data such as design values or measured values (e.g., weight, center of gravity) are available, manually entering the values into the tool data settings provides higher accuracy. (Executing "Apply CAD Data" is required.)
+- 为了获得最准确的结果，建议在充分预热后以及关闭控制器至少一个小时后执行负载估计。 当电机温度升高时，估计精度可能会降低。
 
-![Fig 1.2 Apply CAD Data](../_assets/image_12_eng.png)
+{% hint style="info" %}
+推荐的温度范围是35-40°C。 可以通过系统特征数据或负载估计日志文件检查编码器温度。
+{% endhint %}
 
-- Values tuned on one robot model do not necessarily guarantee the same estimation performance on other units of the same model. Mechanical and operating characteristics vary by robot, including mechanical tolerances, motor performance deviation, lubrication conditions, and temperature environment.
+- 如果有设计值或测量值(例如重量、重心)等准确的工具数据，手动将这些值输入工具数据设置可以提供更高的精度。(需要执行“应用CAD数据”。)
 
+![Fig 1.2 应用CAD数据](../_assets/image_12_eng.png)
+
+- 在一个机器人模型上调校的值并不一定能保证在同一模型的其他单元上具有相同的估计性能。 机械和操作特性因机器人而异，包括机械公差、电机性能偏差、润滑条件和温度环境。
 [__SOURCE](1-load-estimation-intro/3-procedure.md)
-# 1.3 Quick Operating Procedure
+# 1.3 快速操作程序
 
-
-Perform the load estimation function according to the sequence shown in the table below.
-
+按照下面表格中显示的顺序执行负载估算功能。
 
 <br>
 
-
 <table>
 <tr>
-<th><center>step</th>
-<th> <center>Task</th>
+<th><center>步骤</th>
+<th> <center>任务</th>
 </tr>
 
 <tr>
 <td rowspan="2" align="center">1</td>
-<td align="center"><b>Enter the function menu </b></td>
+<td align="center"><b>进入功能菜单 </b></td>
 </tr>
 <tr>
-<td align="center">[F2:system] - 6:Auto calibration - 4:Load estimation</td>
+<td align="center">[F2:系统] - 6:自动校准 - 4:负载估算</td>
 </tr>
 
 <tr>
 <td rowspan="2" align="center">2</td>
-<td align="center"><b>Input the added weights</td>
+<td align="center"><b>输入添加的重量</td>
 </tr>
 <tr>
-<td align="center">[F4:Add.weight on each axis]</td>
+<td align="center">[F4:每轴添加重量]</td>
 </tr>
 
 <tr>
 <td rowspan="2" align="center">3</td>
-<td align="center"><b>Set the posture for main axes</td>
+<td align="center"><b>设置主轴的姿态</td>
 </tr>
 <tr>
-<td align="center">[F5:Set pose]</td>
+<td align="center">[F5:设置姿态]</td>
 </tr>
 
 <tr>
 <td rowspan="2" align="center">4</td>
-<td align="center"><b>Set the moving ranges for wrist axes</td>
+<td align="center"><b>设置腕轴的移动范围</td>
 </tr>
 <tr>
-<td align="center">Enter the operating ranges of the B, R1 axes <Br>(estimation may not be possible for some ranges).</td>
+<td align="center">输入 B, R1 轴的操作范围 <Br>(某些范围可能无法进行估算)。</td>
 </tr>
 
 <tr>
 <td rowspan="2" align="center">5</td>
-<td align="center"><b>Try a test operation
+<td align="center"><b>尝试测试操作
 </td>
 </tr>
 <tr>
-<td align="center">[F1:Play check] <br> Check for interference at low speed.</td>
+<td align="center">[F1:播放检查] <br> 检查低速下的干扰。</td>
 </tr>
 
 <tr>
 <td rowspan="2" align="center">6</td>
-<td align="center"><b>Insert a tool number and operate </b></td>
+<td align="center"><b>插入工具编号并操作 </b></td>
 </tr>
 <tr>
-<td align="center">Tool number editing box <br> [F2:Play normal]</td>
+<td align="center">工具编号编辑框 <br> [F2:正常播放]</td>
 </tr>
 
 <tr>
 <td rowspan="2" align="center">7</td>
-<td align="center"><b>Apply the estimated results</b></td>
+<td align="center"><b>应用估算结果</b></td>
 </tr>
 <tr>
-<td align="center">After completing the operation, enter confirmation.</td>
+<td align="center">操作完成后，输入确认。</td>
 </tr>
 
 </table>
 [__SOURCE](2-load-estimation-result/README.md)
-# 2. Load Estimation Details
-
-
+# 2. 载荷估算详细信息
 [__SOURCE](2-load-estimation-result/2-1-weight.md)
-# 2.1 Weight
+# 2.1 重量
 
-This value represents the total weight of the payload mounted on the robot's end effector. The unit is kilograms (kg).
-
+这个值表示安装在机器人末端执行器上的有效载荷的总重量。单位是千克 (kg)。
 [__SOURCE](2-load-estimation-result/2-2-weight-center-of-gravity.md)
-# 2.2 Center of Gravity
+# 2.2 重心
 
-The center of gravity is defined as the distance from the robot's end effector to the payload's center of gravity in the X, Y, and Z directions. The unit used is millimeters (mm).
-
+重心定义为从机器人的末端执行器到负载重心在 X、Y 和 Z 方向上的距离。使用的单位是毫米（mm）。
 [__SOURCE](2-load-estimation-result/2-3-inertia.md)
-# 2.3 Inertia
+# 2.3 惯性
 
-This value represents the payload's moment of inertia. It refers to the sum of each distributed weight multiplied by the square of its distance from the rotational axis, assuming rotation around the X, Y, and Z axes. The moment of inertia is determined by how the weight is distributed around each axis - greater values occur when more of the payload's weight is located farther from the rotation axis. The unit used is kg·m² for the X, Y, and Z axes.
+此值表示有效载荷的转动惯量。它指的是每个分布重量乘以其与旋转轴的距离平方的总和，假设围绕 X、Y 和 Z 轴旋转。转动惯量由重量在每个轴上的分布方式决定——当更多的有效载荷重量位于离旋转轴更远时，值会更大。用于 X、Y 和 Z 轴的单位是 kg·m²。
 
 ![Fig 3. Inertia Calculation](<../_assets/image_10_eng.png>)
-
-
 [__SOURCE](3-load-estimation-menu-explain/README.md)
-# 3. Load Estimation Menu Description
+# 3. 负载估算菜单描述
 
-Execute the load estimation from `[system] - 6.Auto calibration - 4:Load estimation function`.
+从 `[system] - 6.自动 校准 - 4:负载预估功能 ([system] - 6.Auto calibration - 4:Load estimation function)` 执行负载估算。
 
 {% hint style="info" %}
 
-When selecting the `4:Load estimation function` menu, if the current control mode is set to "Vibration Suppression Control," the motor will automatically turn Off to switch the mode to "PPI."
-After load estimation is completed, the mode will automatically return to "Vibration Suppression Control," and the motor will again turn Off.
+当选择 `4:负载预估功能 (4:Load estimation function)` 菜单时，如果当前控制模式设置为 "Vibration Suppression Control"，电机将自动关闭以切换模式至 "PPI"。  
+负载估算完成后，模式将自动返回 "Vibration Suppression Control"，电机将再次关闭。
 
 {% endhint %}
 
 ![Fig 4. Load Estimation Screen](<../_assets/image_2_eng.png>)
-
-
-
 [__SOURCE](3-load-estimation-menu-explain/3-1-tool-number.md)
-# 3.1 Tool Number
+# 3.1 工具编号
 
-Assign the tool number that represents the tool to be used.
-When the assigned tool number is applied to the teaching program, the robot will operate based on the estimated payload properties.
-Only registered tool data can be used as a tool number.
-
+分配表示要使用的工具的工具编号。  
+当分配的工具编号应用于教学程序时，机器人将根据估计的有效载荷属性进行操作。  
+只有注册的工具数据才能用作工具编号。
 [__SOURCE](3-load-estimation-menu-explain/3-2-motion-area.md)
-# 3.2 Operating Range
+# 3.2 操作范围
 
-This screen displays the motion range of each axis used for load estimation.
-"Axis Angle" shows the current value of each robot axis, and "Start Position" indicates the initial position where load estimation begins.
-The "Min" and "Max" values in the "Motion Range" represent the minimum and maximum axis limits used during the estimation motion.
-For the B axis and R1 axis, the minimum and maximum motion ranges can be configured.
+此屏幕显示用于负载估算的每个轴的运动范围。
+“轴角”显示每个机器人轴的当前值，“起始位置”指示负载估算开始的初始位置。
+“运动范围”中的“最小”和“最大”值表示在估算运动过程中使用的最小和最大轴限制。
+对于 B 轴和 R1 轴，最小和最大运动范围可以配置。
 
-The default motion range settings are as follows:
+默认的运动范围设置如下：
 
-\`Default Motion Range`
+`默认运动范围`
 
-  - B Axis Motion Range (min): (60° - H-axis angle - V-axis angle)
+  - B 轴运动范围（最小）：（60° - H 轴角 - V 轴角）
 
-  - B Axis Motion Range (max): (120° - H-axis angle - V-axis angle)
+  - B 轴运动范围（最大）：（120° - H 轴角 - V 轴角）
 
-  - R1 Axis Motion Range (min): 0°
+  - R1 轴运动范围（最小）：0°
 
-  - R1 Axis Motion Range (max): 90°
+  - R1 轴运动范围（最大）：90°
 
-Depending on the configured wrist-axis motion range, certain payload properties may not be measurable. In such cases, the user must manually input the payload data.
+根据配置的腕轴运动范围，某些负载属性可能无法测量。在这种情况下，用户必须手动输入负载数据。
 
-![Fig 5. Warning Message When Center of Gravity (Cx, Cy) and Inertia Cannot Be Estimated](<../_assets/image_3_eng.png>)
+![图5. 当重心 (Cx, Cy) 和惯性无法估算时的警告信息](<../_assets/image_3_eng.png>)
 
-The required motion range conditions for the B axis and R1 axis to estimate all payload properties are as follows:
+估算所有负载属性所需的 B 轴和 R1 轴的运动范围条件如下：
 
-\`Motion Range Conditions for Full Payload Estimation`
+`完整负载估算的运动范围条件`
 
- - B-Axis Motion Range: Must be within (40° - H - V) to (140° - H - V)
+ - B 轴运动范围：必须在（40° - H - V）到（140° - H - V）之间
 
- - Minimum Motion Angle of B-Axis: 20° or greater
+ - B 轴的最小运动角度：20°或更大
 
- - Minimum Motion Angle of R1-Axis: 60° or greater
-
+ - R1 轴的最小运动角度：60°或更大
 [__SOURCE](3-load-estimation-menu-explain/3-3-check-operation.md)
-# 3.3 Test Operation
+# 3.3 测试操作
 
-This function is used to check for possible interference. Load estimation is not performed when executing the "**Play check**" function.
+此功能用于检查可能的干扰。在执行“**检查操作 (Play check)**”功能时，不执行载荷估算。
 
-Since load estimation operates the robot in a predefined motion pattern to obtain payload data, attention must be given to interference with surrounding equipment or the robot itself during motion. Therefore, before running `Play normal`, the user must perform `Play check` to verify that no collision risk exists. If interference occurs, press the Emergency Stop button or switch the Enable Switch to Off to stop the robot.
+由于载荷估算在预定义的运动模式下操作机器人以获取负载数据，因此在运动过程中必须注意与周围设备或机器人自身的干扰。因此，在运行 `正常运行 (Play normal)` 之前，用户必须执行 `检查操作 (Play check)` 以验证不存在碰撞风险。如果发生干扰，请按下急停按钮或将启用开关切换为关闭以停止机器人。
 
-If the robot stops before the check operation is completed, the load estimation menu must be executed again.
+如果机器人在检查操作完成之前停止，则必须再次执行载荷估算菜单。
 
-`[Operating condition]`
+`[操作条件]`
 
-  - Robot controller : manual mode
+  - 机器人控制器 : 手动模式
 
-  - Enable Switch : On
-
+  - 启用开关 : 开
 [__SOURCE](3-load-estimation-menu-explain/3-4-normal-operation.md)
-# 3.4 Normal Operation
+# 3.4 正常操作
 
-This menu executes the load estimation. Since the operation runs at high speed, it must only be executed after verifying interference safety using "**Play check**".
+此菜单执行负载估算。由于操作以高速运行，必须在使用“**播放检查**”验证干扰安全后才可以执行。
 
-`[Operating condition]`
+`[操作条件]`
 
-  - Robot controller : manual mode
+  - 机器人控制器 : 手动模式
 
-  - Enable Switch : On
+  - 使能开关 : 开
 [__SOURCE](3-load-estimation-menu-explain/3-5-additional-mass-by-axis.md)
-# 3.5 Additional Weights by Axis
+# 3.5 额外的轴重量
 
+导航到每个轴的额外重量菜单。
+为了进行准确的负载估算，必须输入轴 3 的额外重量信息（重量、X 轴重心和 Z 轴重心）。
+额外重量包括安装板、信号箱和附加到框架上的电缆等项目。
 
-Navigate to the Additional weights per Axis menu.
-To perform accurate load estimation, the additional weight information for Axis 3 (weight, X-axis center of gravity, and Z-axis center of gravity) must be entered.
-The additional weights include items such as mounting plates, signal boxes, and cables attached to the frame.
-
-The coordinate system used for entering the additional weights of Axis 3 is shown below.
+用于输入轴 3 的额外重量的坐标系统如下所示。
 
 ![Fig 6. Axis-3 Additional Weight Components and Coordinate System](<../_assets/image_9_eng.png>)
 [__SOURCE](3-load-estimation-menu-explain/3-6-positioning.md)
-# 3.6 Posture Setting
+# 3.6 姿态设置
 
-Specify the starting posture for the estimation motion.
-The user must manually move the robot axes to a position where no interference occurs between the robot, tool, or surrounding environment, and then press "**Set pose**(Set Main-Axis Position)" to register the starting posture.
+指定估计运动的起始姿态。 用户必须手动移动机器人轴到不与机器人、工具或周围环境发生干扰的位置，然后按“**设置姿态**（设置主轴位置）”以注册起始姿态。
 
-There is no restriction for the S-axis; however, the H and V axes must be set so that the V-axis frame angle remains within ±60° relative to the ground reference. For optimal estimation accuracy, it is recommended to set the V-axis angle as close to 0° as possible.
+S轴没有限制；然而，H轴和V轴必须设置以保持V轴框架角度相对于地面基准在±60°以内。为了获得最佳的估计准确性，建议将V轴角度设置得尽可能接近0°。
 
-If the user attempts to press "Set Position" while the V-axis angle exceeds ±60°, a message will appear stating:
-"The V-axis angle must be within ±60° relative to the ground."
+如果用户在V轴角度超过±60°时尝试按“设置位置”，将出现一条消息：
+“V轴角度必须相对于地面保持在±60°以内。”
 
-1.  **Current Axis Angles**
+1.  **当前轴角度**
 
-    Displays the current angles of the main robot axes (S, H, V).
+    显示主机器人轴（S、H、V）的当前角度。
 
-2.  **Starting Position**
+2.  **起始位置**
 
-    Displays the registered S, H, and V axis angles used as the starting posture for load estimation. Once the **Play check** or **Play normal** button is executed, the robot posture will move to the specified position.
-
+    显示注册的S、H和V轴角度，作为负载估计的起始姿态。一旦执行“**播放检查**”或“**正常播放**”按钮，机器人姿态将移动到指定位置。
 [__SOURCE](4-load-estimation-motion-area/README.md)
-# 4. Load Estimation Operating Range
+# 4. 负载估计操作范围
 
-The motion pattern used for load estimation varies depending on the robot type, such as 6-axis robots (HDX series, HDR series etc.), 4-axis palletizing robots (HDP series), and painting robots (HDE series). The corresponding motion ranges are as follows.
+用于负载估计的运动模式因机器人类型而异，例如6轴机器人（HDX系列，HDR系列等），4轴码垛机器人（HDP系列）和喷涂机器人（HDE系列）。相应的运动范围如下。
 [__SOURCE](4-load-estimation-motion-area/4-1-6-axis-robot.md)
 # 4.1 6-Axis Robot
 
-![Fig 7.  Load Estimation Operating Range (6-axis robot)](<../_assets/image_5_eng.png>)
-
+![Fig 7. 负载估计操作范围 (6-axis robot)](<../_assets/image_5_eng.png>)
 [__SOURCE](4-load-estimation-motion-area/4-2-4-axis-palletize-robot.md)
 # 4.2 4-Axis Palletizing Robot
 
 ![Fig 8. Load Estimation Operating Range (4-Axis Palletizing Robot)](<../_assets/image_8_eng.png>)
-
 [__SOURCE](4-load-estimation-motion-area/4-3-paint-robot.md)
-# 4.3 Painting Robot
+# 4.3 喷漆机器人
 
 ![Fig 9. Load Estimation Operating Range (Painting Robot)](<../_assets/image_11_eng.png>)
-
 [__SOURCE](5-load-estimation-result-application-method/README.md)
-# 5. How to Apply Load Estimation Results
-
-
+# 5. 如何应用负载估算结果
 [__SOURCE](5-load-estimation-result-application-method/5-1-application.md)
-# 5.1 Applying Load Estimation Results
+# 5.1 应用负载估计结果
 
-After reviewing the load estimation results, press "OK." When the confirmation message "Apply the estimated values?" appears, selecting "Yes" will save the estimated payload data to the assigned tool number. If "No" is selected, the data will not be saved.
+在查看负载估计结果后，按“OK”。当确认消息“应用估计值？”出现时，选择“是”将把估计的有效载荷数据保存到分配的工具编号。如果选择“否”，数据将不会被保存。
 
 ![Fig 10. Load Estimation Result Screen](<../_assets/image_1_eng.png>)
 
@@ -299,27 +269,17 @@ After reviewing the load estimation results, press "OK." When the confirmation m
 
 ![Fig 11. Confirmation Window for Applying Estimated Results](<../_assets/image_6_eng.png>)
 
-The saved tool data will be applied during robot operation when the corresponding tool number is selected in the teaching program. Therefore, when the tool is changed or when the tool handles a workpiece, the tool data representing that condition must be selected and used in the teaching program.
-
-
-
-
-
+保存的工具数据将在机器人操作时应用，当在教学程序中选择相应的工具编号。因此，当工具更改或工具处理工件时，必须在教学程序中选择和使用代表该条件的工具数据。
 [__SOURCE](5-load-estimation-result-application-method/5-2-check-modify.md)
-# 5.2 Checking and Adjusting Results
+# 5.2 检查和调整结果
 
-The estimated payload data can be checked and modified from:
-"Settings" → "3. Robot Parameters" → "1. Tool Data."
-The estimation results will appear under the tool number that was used during the load estimation process.
+估计的有效载荷数据可以从：
+"设置" → "3. 机器人参数" → "1. 工具数据" 检查和修改。
+估计结果将显示在用于负载估计过程的工具编号下。
 
 ![Fig 12. Tool Data Screen](<../_assets/image_7_eng.png>)
 
 {% hint style="info" %}
-The estimated inertia values are expressed with respect to the payload's center of gravity.
-If the inertia value in a specific direction is very small, the result may be displayed as 0.
+估计的惯性值是相对于有效载荷的重心表示的。
+如果特定方向的惯性值非常小，结果可能会显示为0。
 {% endhint %}
-
-
-
-
-

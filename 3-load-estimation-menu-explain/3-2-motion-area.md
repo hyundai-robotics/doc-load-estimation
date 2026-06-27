@@ -1,32 +1,32 @@
-﻿# 3.2 Operating Range
+# 3.2 操作范围
 
-This screen displays the motion range of each axis used for load estimation.
-"Axis Angle" shows the current value of each robot axis, and "Start Position" indicates the initial position where load estimation begins.
-The "Min" and "Max" values in the "Motion Range" represent the minimum and maximum axis limits used during the estimation motion.
-For the B axis and R1 axis, the minimum and maximum motion ranges can be configured.
+此屏幕显示用于负载估算的每个轴的运动范围。
+“轴角”显示每个机器人轴的当前值，“起始位置”指示负载估算开始的初始位置。
+“运动范围”中的“最小”和“最大”值表示在估算运动过程中使用的最小和最大轴限制。
+对于 B 轴和 R1 轴，最小和最大运动范围可以配置。
 
-The default motion range settings are as follows:
+默认的运动范围设置如下：
 
-\`Default Motion Range`
+`默认运动范围`
 
-  - B Axis Motion Range (min): (60° - H-axis angle - V-axis angle)
+  - B 轴运动范围（最小）：（60° - H 轴角 - V 轴角）
 
-  - B Axis Motion Range (max): (120° - H-axis angle - V-axis angle)
+  - B 轴运动范围（最大）：（120° - H 轴角 - V 轴角）
 
-  - R1 Axis Motion Range (min): 0°
+  - R1 轴运动范围（最小）：0°
 
-  - R1 Axis Motion Range (max): 90°
+  - R1 轴运动范围（最大）：90°
 
-Depending on the configured wrist-axis motion range, certain payload properties may not be measurable. In such cases, the user must manually input the payload data.
+根据配置的腕轴运动范围，某些负载属性可能无法测量。在这种情况下，用户必须手动输入负载数据。
 
-![Fig 5. Warning Message When Center of Gravity (Cx, Cy) and Inertia Cannot Be Estimated](<../_assets/image_3_eng.png>)
+![图5. 当重心 (Cx, Cy) 和惯性无法估算时的警告信息](<../_assets/image_3_eng.png>)
 
-The required motion range conditions for the B axis and R1 axis to estimate all payload properties are as follows:
+估算所有负载属性所需的 B 轴和 R1 轴的运动范围条件如下：
 
-\`Motion Range Conditions for Full Payload Estimation`
+`完整负载估算的运动范围条件`
 
- - B-Axis Motion Range: Must be within (40° - H - V) to (140° - H - V)
+ - B 轴运动范围：必须在（40° - H - V）到（140° - H - V）之间
 
- - Minimum Motion Angle of B-Axis: 20° or greater
+ - B 轴的最小运动角度：20°或更大
 
- - Minimum Motion Angle of R1-Axis: 60° or greater
+ - R1 轴的最小运动角度：60°或更大

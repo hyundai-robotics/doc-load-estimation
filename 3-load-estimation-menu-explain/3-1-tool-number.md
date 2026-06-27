@@ -1,5 +1,5 @@
-﻿# 3.1 Tool Number
+﻿# 3.1 工具编号
 
-Assign the tool number that represents the tool to be used.
-When the assigned tool number is applied to the teaching program, the robot will operate based on the estimated payload properties.
-Only registered tool data can be used as a tool number.
+分配表示要使用的工具的工具编号。  
+当分配的工具编号应用于教学程序时，机器人将根据估计的有效载荷属性进行操作。  
+只有注册的工具数据才能用作工具编号。

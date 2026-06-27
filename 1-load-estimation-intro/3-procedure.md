@@ -1,73 +1,70 @@
-﻿# 1.3 Quick Operating Procedure
+# 1.3 快速操作程序
 
-
-Perform the load estimation function according to the sequence shown in the table below.
-
+按照下面表格中显示的顺序执行负载估算功能。
 
 <br>
 
-
 <table>
 <tr>
-<th><center>step</th>
-<th> <center>Task</th>
+<th><center>步骤</th>
+<th> <center>任务</th>
 </tr>
 
 <tr>
 <td rowspan="2" align="center">1</td>
-<td align="center"><b>Enter the function menu </b></td>
+<td align="center"><b>进入功能菜单 </b></td>
 </tr>
 <tr>
-<td align="center">[F2:system] - 6:Auto calibration - 4:Load estimation</td>
+<td align="center">[F2:系统] - 6:自动校准 - 4:负载估算</td>
 </tr>
 
 <tr>
 <td rowspan="2" align="center">2</td>
-<td align="center"><b>Input the added weights</td>
+<td align="center"><b>输入添加的重量</td>
 </tr>
 <tr>
-<td align="center">[F4:Add.weight on each axis]</td>
+<td align="center">[F4:每轴添加重量]</td>
 </tr>
 
 <tr>
 <td rowspan="2" align="center">3</td>
-<td align="center"><b>Set the posture for main axes</td>
+<td align="center"><b>设置主轴的姿态</td>
 </tr>
 <tr>
-<td align="center">[F5:Set pose]</td>
+<td align="center">[F5:设置姿态]</td>
 </tr>
 
 <tr>
 <td rowspan="2" align="center">4</td>
-<td align="center"><b>Set the moving ranges for wrist axes</td>
+<td align="center"><b>设置腕轴的移动范围</td>
 </tr>
 <tr>
-<td align="center">Enter the operating ranges of the B, R1 axes <Br>(estimation may not be possible for some ranges).</td>
+<td align="center">输入 B, R1 轴的操作范围 <Br>(某些范围可能无法进行估算)。</td>
 </tr>
 
 <tr>
 <td rowspan="2" align="center">5</td>
-<td align="center"><b>Try a test operation
+<td align="center"><b>尝试测试操作
 </td>
 </tr>
 <tr>
-<td align="center">[F1:Play check] <br> Check for interference at low speed.</td>
+<td align="center">[F1:播放检查] <br> 检查低速下的干扰。</td>
 </tr>
 
 <tr>
 <td rowspan="2" align="center">6</td>
-<td align="center"><b>Insert a tool number and operate </b></td>
+<td align="center"><b>插入工具编号并操作 </b></td>
 </tr>
 <tr>
-<td align="center">Tool number editing box <br> [F2:Play normal]</td>
+<td align="center">工具编号编辑框 <br> [F2:正常播放]</td>
 </tr>
 
 <tr>
 <td rowspan="2" align="center">7</td>
-<td align="center"><b>Apply the estimated results</b></td>
+<td align="center"><b>应用估算结果</b></td>
 </tr>
 <tr>
-<td align="center">After completing the operation, enter confirmation.</td>
+<td align="center">操作完成后，输入确认。</td>
 </tr>
 
 </table>
